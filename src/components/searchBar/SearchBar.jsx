@@ -1,15 +1,9 @@
+const SearchBar = () => {
+  return (
+    <div className="search-bar">
+      <input type="text" placeholder="Search by location or city..." />
+    </div>
+  );
+};
 
-const SearchBar = ({ searchQuery, setSearchQuery }) => {
-
-    return (
-        <div>
-            <input
-                type='text'
-                placeholder="Search By Location"
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-            />
-        </div>
-    )
-}
-export default SearchBar
+export default SearchBar;
